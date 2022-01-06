@@ -199,7 +199,9 @@ composer require maatwebsite/excel=^3.1.0
 
 <strong>---CONFGURAÇÃO PROVIDER---</strong>
 
+    
 <pre>
+
 config/app.php
 'providers' => [
     /*
@@ -207,19 +209,21 @@ config/app.php
      */
     Maatwebsite\Excel\ExcelServiceProvider::class,
 ]
-</pre>
 
 
--------------------------------------
+
+------------------------------------------------------------
+    
 
 
-<pre>
 'aliases' => [
     ...
     'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 ]
+
 </pre>
 
+    
 <strong>---PUBLICAR CONFGURAÇÃO NA VENDOR---</strong>
 
 php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider" --tag=config
