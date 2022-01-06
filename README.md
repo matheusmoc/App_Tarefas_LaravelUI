@@ -182,3 +182,59 @@ public function __construct($name){
 
 </pre>
 -------------------------------------------------------###-------------------------------------------------------------
+
+
+<h1>LARAVEL EXECEL</h1>
+
+<h4>Exportar arquvos em formato de documento</h4>
+
+<a href='https://laravel-excel.com/'>ACESSAR DOCUMENTAÇÃO AQUI<a>
+
+
+<center>
+
+<strong>---INSTALAÇÃO---</strong>
+
+composer require maatwebsite/excel=^3.1.0
+
+<strong>---CONFGURAÇÃO PROVIDER---</strong>
+
+<pre>
+config/app.php
+'providers' => [
+    /*
+     * Package Service Providers...
+     */
+    Maatwebsite\Excel\ExcelServiceProvider::class,
+]
+</pre>
+
+
+-------------------------------------
+
+
+<pre>
+'aliases' => [
+    ...
+    'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+]
+</pre>
+
+<strong>---PUBLICAR CONFGURAÇÃO NA VENDOR---</strong>
+
+php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider" --tag=config
+
+<strong>OBS: Qualquer configuração do pacote será feita em: config/excel.php </strong>
+
+
+<strong>---EXPORTAR ARQUIVOS XLSX---</strong>
+
+php artisan make:export TarefasExport --model=Tarefa
+
+diretório: app/Exports/...
+
+
+
+</center>
+
+
