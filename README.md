@@ -8,7 +8,7 @@ php artisan ui react --auth <br>
 
 npm run dev 
 
-//caso dê erro intalar o npm ou atualizar o npm
+//caso dê erro basta instalar o npm ou atualizar o npm
 
 npm install
 
@@ -43,7 +43,7 @@ app\Mail\MensagemMail.php
 app\Notifications\RedefinirSenhaNotification.php
 
 sobreescrever o método padrão do laravel para envio de emails para reset de senha, intercepta o fluxo
-
+--------------------------------------------------------------
 
 app\Models\User
 
