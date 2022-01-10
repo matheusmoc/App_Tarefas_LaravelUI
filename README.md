@@ -2,9 +2,9 @@
 
 composer require laravel/ui
 
-php artisan ui bootstrap --auth
-php artisan ui vue --auth
-php artisan ui react --auth
+php artisan ui bootstrap --auth <br>
+php artisan ui vue --auth <br>
+php artisan ui react --auth <br>
 
 npm run dev 
 
