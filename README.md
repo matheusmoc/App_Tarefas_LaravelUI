@@ -153,7 +153,7 @@ alterar mensagem
             ->greenting('Olá'.$this->name)
             ->line('Clique no botão abaixo para validar seu email')
             ->action('Clique aqui para validar seu email', $url)
-            ->line('Caso não seja cadastrado, deconsidere a mensagem');
+            ->line('Caso não seja cadastrado, desconsidere a mensagem');
     }
 
 </pre>
